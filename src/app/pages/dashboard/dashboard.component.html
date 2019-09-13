@@ -1,0 +1,181 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="title">
+        Please give ratings to five movies
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="input-field">
+        <div nbInput>
+          <ng-autocomplete
+              [data]="data"
+              [searchKeyword]="keyword"
+              (selected)='selectEvent($event)'
+              (inputChanged)='onChangeSearch($event)'
+              (inputFocused)='onFocused($event)'
+              [itemTemplate]="itemTemplate"
+              [notFoundTemplate]="notFoundTemplate" placeHolder="Movie 1">
+          </ng-autocomplete>
+
+          <ng-template #itemTemplate let-item>
+            <a [innerHTML]="item.name"></a>
+          </ng-template>
+
+          <ng-template #notFoundTemplate let-notFound>
+            <div [innerHTML]="notFound"></div>
+          </ng-template>
+        </div>
+
+        <button nbButton size="medium">
+          Enter
+        </button>
+
+        <input class="rate" nbInput type="number" min="1" max="10">
+
+        <button nbButton size="medium">
+          Rate
+        </button>
+      </div>
+
+      <div class="input-field">
+        <div nbInput>
+          <ng-autocomplete
+              [data]="data"
+              [searchKeyword]="keyword"
+              (selected)='selectEvent($event)'
+              (inputChanged)='onChangeSearch($event)'
+              (inputFocused)='onFocused($event)'
+              [itemTemplate]="itemTemplate"
+              [notFoundTemplate]="notFoundTemplate" placeHolder="Movie 2">
+          </ng-autocomplete>
+
+          <ng-template #itemTemplate let-item>
+            <a [innerHTML]="item.name"></a>
+          </ng-template>
+
+          <ng-template #notFoundTemplate let-notFound>
+            <div [innerHTML]="notFound"></div>
+          </ng-template>
+        </div>
+
+        <button nbButton size="medium">
+          Enter
+        </button>
+
+        <input class="rate" nbInput type="number" min="1" max="10">
+
+        <button nbButton size="medium" >
+          Rate
+        </button>
+      </div>
+
+      <div class="input-field">
+        <div nbInput>
+          <ng-autocomplete
+              [data]="data"
+              [searchKeyword]="keyword"
+              (selected)='selectEvent($event)'
+              (inputChanged)='onChangeSearch($event)'
+              (inputFocused)='onFocused($event)'
+              [itemTemplate]="itemTemplate"
+              [notFoundTemplate]="notFoundTemplate" placeHolder="Movie 3">
+          </ng-autocomplete>
+
+          <ng-template #itemTemplate let-item>
+            <a [innerHTML]="item.name"></a>
+          </ng-template>
+
+          <ng-template #notFoundTemplate let-notFound>
+            <div [innerHTML]="notFound"></div>
+          </ng-template>
+        </div>
+
+        <button nbButton size="medium">
+          Enter
+        </button>
+
+        <input class="rate" nbInput type="number" min="1" max="10">
+
+        <button nbButton size="medium">
+          Rate
+        </button>
+      </div>
+
+      <div class="input-field">
+        <div nbInput>
+          <ng-autocomplete
+              [data]="data"
+              [searchKeyword]="keyword"
+              (selected)='selectEvent($event)'
+              (inputChanged)='onChangeSearch($event)'
+              (inputFocused)='onFocused($event)'
+              [itemTemplate]="itemTemplate"
+              [notFoundTemplate]="notFoundTemplate" placeHolder="Movie 4">
+          </ng-autocomplete>
+
+          <ng-template #itemTemplate let-item>
+            <a [innerHTML]="item.name"></a>
+          </ng-template>
+
+          <ng-template #notFoundTemplate let-notFound>
+            <div [innerHTML]="notFound"></div>
+          </ng-template>
+        </div>
+
+        <button nbButton size="medium">
+          Enter
+        </button>
+
+        <input class="rate" nbInput type="number" min="1" max="10">
+
+        <button nbButton size="medium">
+          Rate
+        </button>
+      </div>
+
+      <div class="input-field">
+        <div nbInput>
+          <ng-autocomplete
+              [data]="data"
+              [searchKeyword]="keyword"
+              (selected)='selectEvent($event)'
+              (inputChanged)='onChangeSearch($event)'
+              (inputFocused)='onFocused($event)'
+              [itemTemplate]="itemTemplate"
+              [notFoundTemplate]="notFoundTemplate" placeHolder="Movie 5">
+          </ng-autocomplete>
+
+          <ng-template #itemTemplate let-item>
+            <a [innerHTML]="item.name"></a>
+          </ng-template>
+
+          <ng-template #notFoundTemplate let-notFound>
+            <div [innerHTML]="notFound"></div>
+          </ng-template>
+        </div>
+
+        <button nbButton size="medium">
+          Enter
+        </button>
+
+        <input class="rate" nbInput type="number" min="1" max="10">
+
+        <button nbButton size="medium">
+          Rate
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 text-center">
+      <button nbButton size="large" (click)="onSubmit()">
+        Recommend!
+      </button>
+    </div>
+  </div>
+</div>

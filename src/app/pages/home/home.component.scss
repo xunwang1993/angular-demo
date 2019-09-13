@@ -1,0 +1,25 @@
+.row {
+  margin: 30px 0;
+}
+
+.page-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 28px;
+}
+
+.text-notes {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.image {
+  margin: auto;
+  width: 300px;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+  }
+}
